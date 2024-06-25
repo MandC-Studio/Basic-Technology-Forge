@@ -11,5 +11,11 @@
   "item.basictechnology.iron_stick": "铁棒",
   "item.basictechnology.steel_stick": "钢棒",
   "item.basictechnology.gold_stick": "金棒",
-  "item.basictechnology.netherite_stick": "下界合金棒"
+  "item.basictechnology.netherite_stick": "下界合金棒",
+
+  "item.basictechnology.copper_plate": "铜板",
+  "item.basictechnology.iron_plate": "铁板",
+  "item.basictechnology.steel_plate": "钢板",
+  "item.basictechnology.gold_plate": "金板",
+  "item.basictechnology.netherite_plate": "下界合金板"
 }

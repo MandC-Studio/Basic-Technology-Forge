@@ -47,11 +47,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.STEEL_STICK);
         simpleItem(ModItems.GOLD_STICK);
         simpleItem(ModItems.NETHERITE_STICK);
-        //simpleItem(ModItems.COPPER_PLATE);
-        //simpleItem(ModItems.IRON_PLATE);
-        //simpleItem(ModItems.STEEL_PLATE);
-        //simpleItem(ModItems.GOLD_PLATE);
-        //simpleItem(ModItems.NETHERITE_PLATE);
+        simpleItem(ModItems.COPPER_PLATE);
+        simpleItem(ModItems.IRON_PLATE);
+        simpleItem(ModItems.STEEL_PLATE);
+        simpleItem(ModItems.GOLD_PLATE);
+        simpleItem(ModItems.NETHERITE_PLATE);
     }
 
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {

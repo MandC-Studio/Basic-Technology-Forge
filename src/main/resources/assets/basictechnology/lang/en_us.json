@@ -11,5 +11,11 @@
   "item.basictechnology.iron_stick": "Iron Stick",
   "item.basictechnology.steel_stick": "Steel Stick",
   "item.basictechnology.gold_stick": "Gold Stick",
-  "item.basictechnology.netherite_stick": "Netherite Stick"
+  "item.basictechnology.netherite_stick": "Netherite Stick",
+
+  "item.basictechnology.copper_plate": "Copper Plate",
+  "item.basictechnology.iron_plate": "Iron Plate",
+  "item.basictechnology.steel_plate": "Steel Plate",
+  "item.basictechnology.gold_plate": "Gold Plate",
+  "item.basictechnology.netherite_plate": "Netherite Plate"
 }
