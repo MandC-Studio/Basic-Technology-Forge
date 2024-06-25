@@ -14,7 +14,7 @@ public class ModCreativeModeTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, BasicTechnology.MODID);
 
     public static final RegistryObject<CreativeModeTab> CRYSTALLOGRAPHY_TAB = CREATIVE_MODE_TABS.register("crystallography_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.IRON_PLATE.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.STEEL_PLATE.get()))
                     .title(Component.translatable("creativetab.basictechnology.crystallography_tab"))
                     .displayItems(((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.COPPER_NUGGET.get());
