@@ -1,0 +1,15 @@
+{
+  "creativetab.basictechnology.crystallography_tab": "基础科技",
+
+  "item.basictechnology.copper_nugget": "铜粒",
+  "item.basictechnology.steel_nugget": "钢粒",
+  "item.basictechnology.netherite_nugget": "下界合金粒",
+
+  "item.basictechnology.steel_ingot": "钢锭",
+
+  "item.basictechnology.copper_stick": "铜棒",
+  "item.basictechnology.iron_stick": "铁棒",
+  "item.basictechnology.steel_stick": "钢棒",
+  "item.basictechnology.gold_stick": "金棒",
+  "item.basictechnology.netherite_stick": "下界合金棒"
+}

@@ -1,0 +1,15 @@
+{
+  "creativetab.basictechnology.crystallography_tab": "Basic Technology",
+
+  "item.basictechnology.copper_nugget": "Copper Nugget",
+  "item.basictechnology.steel_nugget": "Steel Nugget",
+  "item.basictechnology.netherite_nugget": "Netherite Nugget",
+
+  "item.basictechnology.steel_ingot": "Steel Ingot",
+
+  "item.basictechnology.copper_stick": "Copper Stick",
+  "item.basictechnology.iron_stick": "Iron Stick",
+  "item.basictechnology.steel_stick": "Steel Stick",
+  "item.basictechnology.gold_stick": "Gold Stick",
+  "item.basictechnology.netherite_stick": "Netherite Stick"
+}

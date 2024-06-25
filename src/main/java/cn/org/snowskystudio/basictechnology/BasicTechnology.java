@@ -1,5 +1,6 @@
 package cn.org.snowskystudio.basictechnology;
 
+import cn.org.snowskystudio.basictechnology.item.ModCreativeModeTabs;
 import cn.org.snowskystudio.basictechnology.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
@@ -48,6 +49,7 @@ public class BasicTechnology
         MinecraftForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModCreativeModeTabs.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
