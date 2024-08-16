@@ -1,5 +1,6 @@
 package cn.org.snowskystudio.basictechnology.datagen.loot;
 
+import cn.org.snowskystudio.basictechnology.block.ModBlocks;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
@@ -21,21 +22,12 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
-
-    }
-
-    protected LootTable.Builder createCopperLikeOreDrops(Block pBlock, Item item) {
-        return createSilkTouchDispatchTable(pBlock,
-                this.applyExplosionDecay(pBlock,
-                        LootItem.lootTableItem(item)
-                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(2.0f, 5.0f)))
-                                .apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE))
-                ));
+        dropSelf(ModBlocks.STEEL_BLOCK.get());
+        this.dropSelf(ModBlocks.PRESS_MACHINE.get());
     }
 
     @Override
     protected Iterable<Block> getKnownBlocks() {
-        return Set.of();
-        //return ModBlocks.BLOCKS.getEntries().stream().map(RegistryObject::get)::iterator;
+        return ModBlocks.BLOCKS.getEntries().stream().map(RegistryObject::get)::iterator;
     }
 }

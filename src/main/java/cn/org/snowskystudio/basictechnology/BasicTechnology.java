@@ -1,9 +1,15 @@
 package cn.org.snowskystudio.basictechnology;
 
+import cn.org.snowskystudio.basictechnology.block.ModBlocks;
+import cn.org.snowskystudio.basictechnology.block.entity.ModBlockEntities;
 import cn.org.snowskystudio.basictechnology.item.ModCreativeModeTabs;
 import cn.org.snowskystudio.basictechnology.item.ModItems;
+import cn.org.snowskystudio.basictechnology.recipe.ModRecipes;
+import cn.org.snowskystudio.basictechnology.screen.ModMenuTypes;
+import cn.org.snowskystudio.basictechnology.screen.PressMachineScreen;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
@@ -49,7 +55,11 @@ public class BasicTechnology
         MinecraftForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.regisiter(modEventBus);
+        ModBlockEntities.register(modEventBus);
         ModCreativeModeTabs.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
+        ModRecipes.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -80,6 +90,7 @@ public class BasicTechnology
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
+            MenuScreens.register(ModMenuTypes.PRESS_MACHINE_MENU.get(), PressMachineScreen::new);
         }
     }
 }
