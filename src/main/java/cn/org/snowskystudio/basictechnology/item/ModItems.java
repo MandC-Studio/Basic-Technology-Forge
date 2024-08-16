@@ -51,6 +51,10 @@ public class ModItems {
     public static final RegistryObject<Item> NETHERITE_PLATE = ITEMS.register("netherite_plate",
             () -> new Item(new Item.Properties().fireResistant()));
 
+    /**
+     * This method is used to make the deferred register work
+     * @param eventBus the register
+     */
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

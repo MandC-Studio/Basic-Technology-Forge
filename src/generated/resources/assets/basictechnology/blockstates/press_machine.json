@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "basictechnology:block/press_machine",
+      "y": 180
+    },
+    "facing=north": {
+      "model": "basictechnology:block/press_machine",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "basictechnology:block/press_machine",
+      "y": 270
+    },
+    "facing=west": {
+      "model": "basictechnology:block/press_machine"
+    }
+  }
+}
