@@ -1,9 +1,11 @@
 package cn.org.snowskystudio.basictechnology.datagen;
 
 import cn.org.snowskystudio.basictechnology.BasicTechnology;
+import cn.org.snowskystudio.basictechnology.block.ModBlocks;
 import net.minecraft.core.Direction;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.client.model.generators.ModelFile;
@@ -20,7 +22,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
      */
     @Override
     protected void registerStatesAndModels() {
-
+        blockWithDirectionalRotation(ModBlocks.PRESS_MACHINE,
+                new ModelFile.UncheckedModelFile(modLoc("block/press_machine")), 90);
     }
 
     /**
@@ -32,12 +35,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
     }
 
-    /*
     private void blockWithDirectionalRotation(RegistryObject<Block> blockRegistryObject, ModelFile.UncheckedModelFile modelLocation, int mov) {
         simpleBlockItem(blockRegistryObject.get(), modelLocation);
         getVariantBuilder(blockRegistryObject.get())
                 .forAllStates(state -> {
-                    Direction facing = state.getValue(CrystallizerBlock.FACING);
+                    Direction facing = state.getValue(HorizontalDirectionalBlock.FACING);
                     int xRot = 0;
                     int yRot = 0;
                     switch (facing) {
@@ -61,5 +63,5 @@ public class ModBlockStateProvider extends BlockStateProvider {
                             .rotationY(yRot)
                             .build();
                 });
-    }*/
+    }
 }

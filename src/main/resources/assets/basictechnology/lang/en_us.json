@@ -17,5 +17,7 @@
   "item.basictechnology.iron_plate": "Iron Plate",
   "item.basictechnology.steel_plate": "Steel Plate",
   "item.basictechnology.gold_plate": "Gold Plate",
-  "item.basictechnology.netherite_plate": "Netherite Plate"
+  "item.basictechnology.netherite_plate": "Netherite Plate",
+
+  "block.basictechnology.press_machine": "Press Machine"
 }
